@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha.tech - Encontre vagas que combinam com você</title>
+
+  <!-- Fonte importada do Google Fonts (Poppins), usada em toda a página -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="header">
+    <div class="logo-area">
+      <!-- IMAGEM: logo do Trilha.tech (ícone) vai aqui -->
+      <div class="logo-placeholder"></div>
+      <div class="logo-text">
+        <h2 class="logo-title">Trilha.tech</h2>
+        <p class="logo-subtitle">Conecte suas habilidades às melhores oportunidades</p>
+      </div>
+    </div>
+    <a href="#" class="sobre-link">Sobre o projeto</a>
+  </header>
+
+  <!--
+    ===================== CONTEÚDO PRINCIPAL =====================
+    Todos os blocos abaixo (texto do hero, ilustração, "como funciona",
+    card de habilidades e card lateral) ficam dentro do MESMO container
+    flexível. Isso é o que permite reorganizar a posição de cada um
+    (via CSS "order") separadamente para desktop, tablet e celular,
+    sem precisar duplicar o HTML.
+  -->
+  <div class="conteudo-principal">
+
+    <div class="hero-texto">
+      <h1>Encontre vagas que <span class="destaque">combinam com você</span></h1>
+      <p>Informe suas habilidades e descubra oportunidades alinhadas ao que você sabe fazer.</p>
+    </div>
+
+    <div class="hero-imagem">
+      <!-- IMAGEM: ilustração principal (notebook + lupa) vai aqui -->
+    </div>
+
+    <div class="como-funciona">
+      <h3>Como funciona?</h3>
+      <ol>
+        <li>Avalie seu nível de domínio em cada habilidade;</li>
+        <li>Clique em "Ver minha recomendação";</li>
+        <li>Veja a vaga que combina com o seu perfil!</li>
+      </ol>
+      <p class="como-funciona-dica">Quanto mais sincero for o seu perfil, melhor será a recomendação.</p>
+    </div>
+
+    <!-- Cartão grande com os formulários (fica fixo, só a lista de itens rola) -->
+    <div class="skills-card">
+
+      <!-- Cabeçalho do cartão: não rola -->
+      <div class="skills-card-header">
+        <h3>Avalie suas habilidades</h3>
+        <p>Selecione o quanto você domina cada item abaixo:</p>
+      </div>
+
+      <!-- Lista de habilidades: essa área rola internamente -->
+      <div class="skills-lista">
+
+        <!-- ---------- HARD SKILLS ---------- -->
+        <h4 class="grupo-titulo">Hard Skills</h4>
+
+        <div class="skill-item">
+          <p class="skill-nome">HTML</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">CSS</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">JavaScript</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">UI/UX Design</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Lógica de Programação</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Desenvolvimento Front End</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Banco de Dados</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Node.js - Back End</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Testes de Front End</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Noções Básicas de Redes</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Pensamento Computacional</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <!-- ---------- SOFT SKILLS / COMPETÊNCIAS ---------- -->
+        <h4 class="grupo-titulo">Soft Skills e Competências</h4>
+
+        <div class="skill-item">
+          <p class="skill-nome">Pensamento Analítico</p>
+          <p class="skill-descricao">Capacidade de quebrar problemas complexos em partes simples para resolvê-los.</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Liderança e Trabalho em Equipe</p>
+          <p class="skill-descricao">Capacidade de se comunicar com clareza, colaborar em grupo e liderar quando necessário, inclusive lidando com imprevistos e conflitos.</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Resiliência, Flexibilidade e Agilidade</p>
+          <p class="skill-descricao">Capacidade de lidar com mudanças e se recuperar de erros rapidamente.</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Pensamento Crítico</p>
+          <p class="skill-descricao">Capacidade de avaliar as respostas e dados gerados por ferramentas de IA.</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <p class="skill-nome">Preparo para Tecnologias Digitais e IA</p>
+          <p class="skill-descricao">O quanto você se sente preparado para utilizar ferramentas digitais e Inteligências Artificiais de forma crítica e profissional no seu futuro emprego.</p>
+          <div class="opcoes">
+            <button class="opcao">Não domino</button>
+            <button class="opcao">Domínio básico</button>
+            <button class="opcao">Intermediário</button>
+            <button class="opcao">Avançado</button>
+          </div>
+        </div>
+
+      </div>
+      <!-- fim da lista rolável -->
+
+      <!-- Rodapé do cartão: não rola, fica sempre visível -->
+      <div class="skills-card-footer">
+        <button class="botao-principal">Ver minha recomendação</button>
+      </div>
+
+    </div>
+    <!-- fim do skills-card -->
+
+    <!-- Cartão lateral (fica ao lado do formulário) -->
+    <div class="destaque-lateral">
+      <!-- IMAGEM: ícone de alvo/foguete vai aqui -->
+      <div class="icone-placeholder"></div>
+      <h3>Seu talento, no lugar certo.</h3>
+      <p>Conectamos estudantes de Informática a oportunidades reais no mercado.</p>
+      <ul class="lista-check">
+        <li>Mais alinhamento com suas habilidades</li>
+        <li>Oportunidades atualizadas</li>
+        <li>Foco no que você realmente domina</li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- fim do conteúdo principal -->
+
+  <!-- ===================== SEÇÕES DE RODAPÉ (edite os textos como quiser) ===================== -->
+  <section class="informacoes">
+
+    <div class="info-item">
+      <!-- IMAGEM: ícone de maleta/vaga vai aqui -->
+      <div class="icone-placeholder"></div>
+      <h4>Vagas reais e atualizadas</h4>
+      <p>Conectamos você a oportunidades de verdade no mercado de trabalho.</p>
+    </div>
+
+    <div class="info-item">
+      <!-- IMAGEM: ícone de alvo vai aqui -->
+      <div class="icone-placeholder"></div>
+      <h4>Baseado nas suas habilidades</h4>
+      <p>Recomendamos vagas de acordo com o que você realmente sabe fazer.</p>
+    </div>
+
+    <div class="info-item">
+      <!-- IMAGEM: ícone de gráfico/crescimento vai aqui -->
+      <div class="icone-placeholder"></div>
+      <h4>Mais confiança, mais futuro</h4>
+      <p>Informação e direcionamento para você conquistar seu espaço.</p>
+    </div>
+
+  </section>
+
+</body>
+</html>
