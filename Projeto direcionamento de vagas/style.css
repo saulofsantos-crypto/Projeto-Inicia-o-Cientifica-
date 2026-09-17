@@ -31,13 +31,13 @@ body {
 .logo-placeholder {
   width: 40px;
   height: 40px;
-  background-color: #ece7fb;
-  border: 1px dashed #6c4ce0;
+  background-color: #e6e6ff;
+  border: 1px dashed #0000CD;
   border-radius: 8px;
 }
 
 .logo-title {
-  color: #6c4ce0;
+  color: #0000CD;
   font-size: 20px;
 }
 
@@ -80,7 +80,7 @@ body {
 }
 
 .destaque {
-  color: #6c4ce0;
+  color: #0000CD;
 }
 
 .hero-texto p {
@@ -93,21 +93,21 @@ body {
   flex: 1 1 28%;
   order: 2;
   height: 260px;
-  background-color: #ece7fb;
-  border: 1px dashed #6c4ce0;
+  background-color: #e6e6ff;
+  border: 1px dashed #0000CD;
   border-radius: 12px;
 }
 
 .como-funciona {
   flex: 1 1 28%;
   order: 3;
-  background-color: #f1eefc;
+  background-color: #e6e6ff;
   padding: 24px;
   border-radius: 12px;
 }
 
 .como-funciona h3 {
-  color: #6c4ce0;
+  color: #0000CD;
   margin-bottom: 12px;
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 .como-funciona-dica {
-  color: #6c4ce0;
+  color: #0000CD;
   font-size: 14px;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 .grupo-titulo {
-  color: #6c4ce0;
+  color: #0000CD;
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 15px;
@@ -187,23 +187,82 @@ body {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
+/* Cada opção é um <label> que envolve um <input type="radio"> escondido.
+   Isso permite selecionar sem precisar de JavaScript. */
 .opcao {
+  position: relative;
   flex: 1;
-  min-width: 110px;
-  padding: 10px 6px;
-  border: 1px solid #cfcfcf;
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 4px;
   border-radius: 8px;
-  background-color: #fafafa;
-  font-size: 12px;
   cursor: pointer;
 }
 
-.opcao:hover {
-  border-color: #6c4ce0;
-  background-color: #f1eefc;
+/* O input de verdade fica escondido, mas continua clicável porque
+   está dentro do <label> */
+.opcao input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.opcao-numero {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #cfcfcf;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 6px;
+  transition: all 0.15s ease; /* deixa a mudança de cor/tamanho suave */
+}
+
+.opcao-label {
+  font-size: 11px;
+  color: #666666;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Hover: azul mais claro que o principal */
+.opcao:hover .opcao-numero {
+  border-color: #4d4dff;
+  background-color: #e6e6ff;
+}
+
+/* Efeito de "pressionar": o círculo encolhe um pouco no instante do clique.
+   Isso é só CSS (pseudo-classe :active), não precisa de JavaScript. */
+.opcao:active .opcao-numero {
+  transform: scale(0.85);
+}
+
+/* Estado selecionado: aplicado nos elementos irmãos do input marcado.
+   A animação "selecionar" dá aquele efeito de "pulo" ao marcar a opção. */
+.opcao input:checked ~ .opcao-numero {
+  background-color: #0000CD;
+  border-color: #0000CD;
+  color: #ffffff;
+  animation: selecionar 0.25s ease;
+}
+
+@keyframes selecionar {
+  0% { transform: scale(0.75); }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.opcao input:checked ~ .opcao-label {
+  color: #0000CD;
+  font-weight: 600;
 }
 
 /* Rodapé do cartão: fica sempre visível, fora da área que rola */
@@ -215,16 +274,22 @@ body {
 .botao-principal {
   width: 100%;
   padding: 14px;
-  background-color: #6c4ce0;
+  background-color: #0000CD;
   color: #ffffff;
   border: none;
   border-radius: 8px;
   font-size: 15px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
+/* Hover: azul mais claro que o principal */
 .botao-principal:hover {
-  background-color: #5a3cc9;
+  background-color: #4d4dff;
+}
+
+.botao-principal:active {
+  transform: scale(0.98);
 }
 
 /* Cartão lateral ao lado do formulário */
@@ -242,8 +307,8 @@ body {
 .icone-placeholder {
   width: 48px;
   height: 48px;
-  background-color: #ece7fb;
-  border: 1px dashed #6c4ce0;
+  background-color: #e6e6ff;
+  border: 1px dashed #0000CD;
   border-radius: 50%;
   margin: 0 auto 16px auto;
 }
@@ -272,7 +337,7 @@ body {
 
 .lista-check li::before {
   content: "✔";
-  color: #6c4ce0;
+  color: #0000CD;
   position: absolute;
   left: 0;
 }
@@ -390,11 +455,11 @@ body {
   }
 
   .opcoes {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .opcao {
-    width: 100%;
+    flex: 1 1 40%;
   }
 
   .informacoes {
