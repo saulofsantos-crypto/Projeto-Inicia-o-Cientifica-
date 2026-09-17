@@ -65,7 +65,7 @@
       </div>
 
       <!-- Lista de habilidades: essa área rola internamente -->
-      <div class="skills-lista">
+      <div class="skills-lista" id="skills-lista">
 
         <!-- ---------- HARD SKILLS ---------- -->
         <h4 class="grupo-titulo">Hard Skills</h4>
@@ -73,110 +73,286 @@
         <div class="skill-item">
           <p class="skill-nome">HTML</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-1-html" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-1-html" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-1-html" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-1-html" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">CSS</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-2-css" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-2-css" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-2-css" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-2-css" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">JavaScript</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-3-javascript" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-3-javascript" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-3-javascript" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-3-javascript" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">UI/UX Design</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-4-ui-ux-design" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-4-ui-ux-design" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-4-ui-ux-design" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-4-ui-ux-design" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">Lógica de Programação</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-5-l-gica-de-programa-o" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-5-l-gica-de-programa-o" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-5-l-gica-de-programa-o" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-5-l-gica-de-programa-o" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">Desenvolvimento Front End</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-6-desenvolvimento-front-end" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-6-desenvolvimento-front-end" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-6-desenvolvimento-front-end" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-6-desenvolvimento-front-end" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">Banco de Dados</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-7-banco-de-dados" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-7-banco-de-dados" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-7-banco-de-dados" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-7-banco-de-dados" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">Node.js - Back End</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-8-node-js-back-end" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-8-node-js-back-end" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-8-node-js-back-end" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-8-node-js-back-end" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">Testes de Front End</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-9-testes-de-front-end" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-9-testes-de-front-end" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-9-testes-de-front-end" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-9-testes-de-front-end" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">Noções Básicas de Redes</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-10-no-es-b-sicas-de-redes" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-10-no-es-b-sicas-de-redes" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-10-no-es-b-sicas-de-redes" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-10-no-es-b-sicas-de-redes" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
         <div class="skill-item">
           <p class="skill-nome">Pensamento Computacional</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-11-pensamento-computacional" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-11-pensamento-computacional" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-11-pensamento-computacional" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-11-pensamento-computacional" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
@@ -187,10 +363,26 @@
           <p class="skill-nome">Pensamento Analítico</p>
           <p class="skill-descricao">Capacidade de quebrar problemas complexos em partes simples para resolvê-los.</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-101-pensamento-anal-tico" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-101-pensamento-anal-tico" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-101-pensamento-anal-tico" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-101-pensamento-anal-tico" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
@@ -198,10 +390,26 @@
           <p class="skill-nome">Liderança e Trabalho em Equipe</p>
           <p class="skill-descricao">Capacidade de se comunicar com clareza, colaborar em grupo e liderar quando necessário, inclusive lidando com imprevistos e conflitos.</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-102-lideran-a-e-trabalho-em-equipe" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-102-lideran-a-e-trabalho-em-equipe" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-102-lideran-a-e-trabalho-em-equipe" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-102-lideran-a-e-trabalho-em-equipe" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
@@ -209,10 +417,26 @@
           <p class="skill-nome">Resiliência, Flexibilidade e Agilidade</p>
           <p class="skill-descricao">Capacidade de lidar com mudanças e se recuperar de erros rapidamente.</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-103-resili-ncia-flexibilidade-e-agilidade" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-103-resili-ncia-flexibilidade-e-agilidade" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-103-resili-ncia-flexibilidade-e-agilidade" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-103-resili-ncia-flexibilidade-e-agilidade" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
@@ -220,10 +444,26 @@
           <p class="skill-nome">Pensamento Crítico</p>
           <p class="skill-descricao">Capacidade de avaliar as respostas e dados gerados por ferramentas de IA.</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-104-pensamento-cr-tico" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Não domino</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-104-pensamento-cr-tico" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Domínio básico</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-104-pensamento-cr-tico" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Intermediário</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-104-pensamento-cr-tico" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Avançado</span>
+            </label>
           </div>
         </div>
 
@@ -231,10 +471,26 @@
           <p class="skill-nome">Preparo para Tecnologias Digitais e IA</p>
           <p class="skill-descricao">O quanto você se sente preparado para utilizar ferramentas digitais e Inteligências Artificiais de forma crítica e profissional no seu futuro emprego.</p>
           <div class="opcoes">
-            <button class="opcao">Não domino</button>
-            <button class="opcao">Domínio básico</button>
-            <button class="opcao">Intermediário</button>
-            <button class="opcao">Avançado</button>
+            <label class="opcao">
+              <input type="radio" name="skill-105-preparo-para-tecnologias-digitais-e-ia" value="0">
+              <span class="opcao-numero">0</span>
+              <span class="opcao-label">Nada preparado</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-105-preparo-para-tecnologias-digitais-e-ia" value="1">
+              <span class="opcao-numero">1</span>
+              <span class="opcao-label">Pouco preparado</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-105-preparo-para-tecnologias-digitais-e-ia" value="2">
+              <span class="opcao-numero">2</span>
+              <span class="opcao-label">Parcialmente preparado</span>
+            </label>
+            <label class="opcao">
+              <input type="radio" name="skill-105-preparo-para-tecnologias-digitais-e-ia" value="3">
+              <span class="opcao-numero">3</span>
+              <span class="opcao-label">Totalmente preparado</span>
+            </label>
           </div>
         </div>
 
@@ -243,7 +499,7 @@
 
       <!-- Rodapé do cartão: não rola, fica sempre visível -->
       <div class="skills-card-footer">
-        <button class="botao-principal">Ver minha recomendação</button>
+        <button class="botao-principal" id="botao-recomendacao">Ver minha recomendação</button>
       </div>
 
     </div>
@@ -291,5 +547,6 @@
 
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
