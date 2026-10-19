@@ -27,13 +27,10 @@ body {
   gap: 12px;
 }
 
-/* Espaço reservado para a logo (imagem entra depois) */
-.logo-placeholder {
-  width: 40px;
-  height: 40px;
-  background-color: #e6e6ff;
-  border: 1px dashed #0000CD;
-  border-radius: 8px;
+/* Logo (ícone) ao lado do nome do site */
+.logo-img {
+  width: 44px;
+  height: auto;
 }
 
 .logo-title {
@@ -89,13 +86,21 @@ body {
 }
 
 /* Espaço reservado para a ilustração do hero */
+/* Quadro da ilustração principal: a imagem ocupa todo o espaço dele */
 .hero-imagem {
   flex: 1 1 28%;
   order: 2;
   height: 260px;
-  background-color: #e6e6ff;
-  border: 1px dashed #0000CD;
+  background-color: #ffffff;
   border-radius: 12px;
+  overflow: hidden;
+}
+
+.hero-imagem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .como-funciona {
@@ -159,7 +164,7 @@ body {
 }
 
 .grupo-titulo {
-  color: #0000CD;
+  color: #222222;
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 15px;
@@ -303,14 +308,21 @@ body {
   text-align: center;
 }
 
-/* Espaço reservado para ícones (imagem entra depois) */
-.icone-placeholder {
-  width: 48px;
-  height: 48px;
-  background-color: #e6e6ff;
-  border: 1px dashed #0000CD;
-  border-radius: 50%;
+/* Imagem acima do título do card lateral */
+.destaque-img {
+  display: block;
+  width: 96px;
+  height: auto;
   margin: 0 auto 16px auto;
+}
+
+/* Ícones das seções de rodapé */
+.info-icone {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin: 0 auto 14px auto;
 }
 
 .destaque-lateral h3 {
