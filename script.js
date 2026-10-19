@@ -3,9 +3,9 @@
 // ============================================================
 //
 // Como funciona, resumindo:
-// 1. Cada uma das 16 habilidades tem 4 opções (valores 0, 1, 2 ou 3).
+// 1. Cada uma das 15 habilidades tem 4 opções (valores 0, 1, 2 ou 3).
 // 2. Ao clicar em "Ver minha recomendação", somamos os valores
-//    marcados e tiramos a MÉDIA (soma ÷ 16).
+//    marcados e tiramos a MÉDIA (soma ÷ quantidade de itens).
 // 3. Essa média cai em uma de 3 faixas, cada uma ligada a uma vaga
 //    real diferente.
 // 4. O usuário NUNCA vê o número da média — só é redirecionado
@@ -47,7 +47,7 @@ function calcularNivel(media) {
   }
 }
 
-// ---- Pega a resposta marcada em cada uma das 16 habilidades ----
+// ---- Pega a resposta marcada em cada uma das 15 habilidades ----
 function coletarRespostas() {
   const grupos = document.querySelectorAll("#skills-lista .opcoes");
   const respostas = [];
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   botao.addEventListener("click", function () {
     const respostas = coletarRespostas();
 
-    // Confere se todas as 16 habilidades foram respondidas
+    // Confere se todas as habilidades foram respondidas
     const naoRespondidas = respostas.filter(function (valor) {
       return valor === null;
     }).length;
